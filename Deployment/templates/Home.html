@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Air Quality Index Prediction</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/style.css')}}">
+
+     </head>
+        <body>
+            <div class="main">
+                <div class="container" >
+                    <h2>Air Quality Index Prediction for Bengaluru City</h2>
+                </div>
+            <div class="ml-container">
+                <form action="{{url_for('predict')}}" method="POST">
+                    <p>Enter Average Temperature (&#8451)</p>
+                   <input type="text" name="T">
+                   <br/>
+                   <p>Enter Maximum Temperature (&#8451)</p>
+                   <input type="text" name="TM">
+                   <br/>
+                   <p>Enter Minimum Temperature (&#8451)</p>
+                   <input type="text" name="Tm">
+                   <br/>
+                   <p>Enter Atmospheric Pressure at Sea Level (hPa)</p>
+                   <input type="text" name="SLP">
+                    <br/>
+                    <p>Enter Average Relative Humidity (%)</p>
+                   <input type="text" name="H">
+                    <br/>
+                    <p>Enter Average Visibility (Km)</p>
+                   <input type="text" name="VV">
+                    <br/>
+                    <p>Enter Average Wind Speed (Km/h)</p>
+                   <input type="text" name="V">
+                    <br/>
+                    <p>Enter Maximum Sustained Wind Speed (Km/h)</p>
+                   <input type="text" name="VM">
+                    <br/>
+                <br/>
+                    <input type="submit" class="btn-info" value="predict">
+                </form>
+            </div>
+
+            </div>
+               
+        </body>
+</html>

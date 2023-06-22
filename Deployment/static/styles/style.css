@@ -1,0 +1,19 @@
+html,body{
+    height:100%;
+}
+
+.container{
+   width:100%;
+   align-items: center;
+   text-align: center;
+}
+
+.ml-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    margin:auto;
+    background-color: #a5c0cf;
+    text-align: center;
+}
